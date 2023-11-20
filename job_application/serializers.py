@@ -46,7 +46,7 @@ class WorkDetailsSerializer(serializers.ModelSerializer):
 class EmploymentHistorySerializer(serializers.ModelSerializer):
     class Meta:
         model = EmploymentHistory
-        exclude = ['user']
+        exclude = ['user', 'work_details']
 
 class AwardSerializer(serializers.ModelSerializer):
     class Meta:
